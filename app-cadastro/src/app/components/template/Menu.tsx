@@ -25,7 +25,7 @@ export default function Menu() {
             <nav className="flex flex-col gap-1 py-7">
                 {/* Chamando o MenuItem várias vezes para criar múltiplos itens de navegação */}
                 <MenuItem icone={IconHome} texto="Início" url="/" />
-                <MenuItem icone={IconUser} texto="Cadastro Usuário" url="/" />
+                <MenuItem icone={IconUser} texto="Cadastro Usuário" url="/usuarios" />
             </nav>
         </aside>
     );

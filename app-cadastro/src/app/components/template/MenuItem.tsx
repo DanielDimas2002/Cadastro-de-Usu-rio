@@ -16,11 +16,11 @@ export default function MenuItem(props: MenuItemProps) {
         <Link href={props.url} className="flex gap-2 px-4 py-2 hover:bg-black">
             {/* Componente ícone dinâmico, que é passado como uma propriedade */}
             {/* O ícone é renderizado com classes adicionais para estilo */}
-            <props.icone className="bg-zinc-200" size={24} stroke={1} />
+            <props.icone className="text-zinc-200" size={24} stroke={1} />
             
             {/* Texto do item, que descreve o destino do link */}
             {/* O texto também possui a classe de fundo `bg-zinc-200` para aplicar o mesmo estilo de fundo */}
-            <span className="bg-zinc-200">{props.texto}</span>  
+            <span className="text-zinc-200">{props.texto}</span>  
         </Link>
     );
 }
