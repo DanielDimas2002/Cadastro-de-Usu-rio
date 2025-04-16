@@ -15,11 +15,21 @@ export default function Home() {
 
   const [usuario, setUsuario] = useState<Usuario>(usuarios[0])
 
+  function salvar(){
+    // salvar no bd
+  }
+
   return (
     <Pagina className="flex flex-col gap-10">  
       <Titulo icone={IconUser} princial="Usuários" secundario="Cadastro de Usuários"/>
       {/*<ListaUsuario />*/}
-      <FormularioUsuario usuario={usuario} onChange={setUsuario}/>
+      <FormularioUsuario 
+      usuario={usuario} 
+      onChange={setUsuario} 
+      salvar = {salvar} 
+      cancelar={() => {
+
+      }}/>
     </Pagina>
   );
 }

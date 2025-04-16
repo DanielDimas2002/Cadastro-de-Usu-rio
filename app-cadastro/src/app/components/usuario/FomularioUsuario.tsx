@@ -4,6 +4,8 @@ import InputTexto from "../shared/InputTexto";
 export interface FormularioUsuarioProps {
     usuario: Usuario
     onChange: (usuario:Usuario) => void
+    salvar: () => void
+    cancelar: () => void
 }
 
 export default function FormularioUsuario(props: FormularioUsuarioProps) {
@@ -35,8 +37,8 @@ export default function FormularioUsuario(props: FormularioUsuarioProps) {
             }} />
 
             <div className="flex gap-5">
-                <button className="bg-blue-500 px-4 py-2 rounded-md">Salvar</button>
-                <button className="bg-zinc-500 px-4 py-2 rounded-md">Cancelar</button>
+                <button className="bg-blue-500 px-4 py-2 rounded-md" onClick={props.salvar}>Salvar</button>
+                <button className="bg-zinc-500 px-4 py-2 rounded-md" onClick={props.cancelar}>Cancelar</button>
             </div>
         </div>
     )
