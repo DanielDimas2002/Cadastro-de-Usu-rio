@@ -15,7 +15,7 @@ export default function FormularioUsuario(props: FormularioUsuarioProps) {
             type="text" 
             value={props.usuario.nome} 
             onChange={(e) => { 
-                props.onChange({...props.usuario, nome: e.target.value})
+                props.onChange?.({...props.usuario, nome: e.target.value})
             }} />
 
             <InputTexto 
@@ -23,7 +23,7 @@ export default function FormularioUsuario(props: FormularioUsuarioProps) {
             type="email" 
             value={props.usuario.email} 
             onChange={(e) => {
-                 props.onChange({...props.usuario, email: e.target.value})
+                 props.onChange?.({...props.usuario, email: e.target.value})
              }} />
 
             <InputTexto 
@@ -31,7 +31,7 @@ export default function FormularioUsuario(props: FormularioUsuarioProps) {
             type="password" 
             value={props.usuario.senha} 
             onChange={(e) => { 
-                props.onChange({...props.usuario, senha: e.target.value})
+                props.onChange?.({...props.usuario, senha: e.target.value})
             }} />
 
             <div className="flex gap-5">
